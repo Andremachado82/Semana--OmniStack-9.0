@@ -13,8 +13,8 @@ const server = http.Server(app);
 const io = socketio(server);
 
 mongoose.connect('mongodb+srv://aircnc:aircnc@cluster0-yeqlo.mongodb.net/semana-9?retryWrites=true&w=majority',{
- useNewUrlParser : true,
- useUnifiedTopology:true,
+  useNewUrlParser : true,
+  useUnifiedTopology:true,
 });
 
 const connectedUsers = {};
